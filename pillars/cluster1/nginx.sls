@@ -4,7 +4,7 @@ nginx_overwrite: |
   <!DOCTYPE html>
   <html>
   <head>
-  <title>Welcome to SALTSTACK TUTORIAL</title>
+  <title>Welcome to the GITFS SALTSTACK TUTORIAL</title>
   <style>
       body {
           width: 35em;
@@ -14,9 +14,9 @@ nginx_overwrite: |
   </style>
   </head>
   <body>
-  <h1>Welcome to nginx!</h1>
-  <p>If you see this page, the nginx web server is successfully installed and reconfigured by saltstack</p>
-  <p><em>Thank you for using saltstack</em></p>
+  <h1>Welcome to gitfs-saltstack!</h1>
+  <p>If you see this page, the nginx web server is successfully installed and reconfigured by saltstack + gitfs</p>
+  <p><em>Thank you for using saltstack, please fork me to make changes!</em></p>
   </body>
   </html>
 
