@@ -7,6 +7,7 @@ Example of people getting confused:
 - https://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html#adding-a-formula-as-a-gitfs-remote
 - https://serverfault.com/questions/817345/salt-top-sls-does-not-update-on-salt-run-fileserver-update-with-gitfs
 - https://freenode.logbot.info/salt/20201231
+
 I've had enough of this.
 
 Clearly saltstack docs need an update or they should add more to a statement like "SIMPLE CONFIGURATION".
