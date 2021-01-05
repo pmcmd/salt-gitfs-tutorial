@@ -1,4 +1,4 @@
 
 main: 
   '*':
-    - nginx.init
+    - salt.nginx.init
