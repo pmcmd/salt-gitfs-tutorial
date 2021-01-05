@@ -1,0 +1,72 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "ubuntu/bionic64"
+
+  config.vm.network "private_network", ip: "192.168.33.69"
+
+  config.vm.provider "virtualbox" do |vb|
+    # Display the VirtualBox GUI when booting the machine
+    vb.gui = true
+
+    # Customize the amount of memory on the VM:
+    vb.memory = "512"
+  end
+
+  config.vm.provision "shell", inline: <<-SHELL
+    wget -O - https://repo.saltstack.com/py3/ubuntu/18.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
+
+    echo "deb http://repo.saltstack.com/py3/ubuntu/18.04/amd64/latest bionic main" >> /etc/apt/sources.list.d/saltstack.list
+
+    sudo apt-get update
+
+    sudo apt-get -y install salt-common
+    sudo apt-get -y install salt-master
+    sudo apt-get -y install python-git
+
+    sudo echo """
+
+startup_states: highstate
+
+interface: 0.0.0.0
+publish_port: 4505
+
+gitfs_provider: gitpython
+
+# you should whitelist only the branches you want salt to read, salt reads all branches, in my case I have a branch called main
+gitfs_env_whitelist:
+  - main
+
+
+fileserver_backend:
+  - git
+
+
+# note that cluster1 is a subdir in the salt-gitfs-tutorial repo
+# for salt states
+gitfs_remotes:
+  - https://github.com/patrickmamaid/salt-gitfs-tutorial.git:
+    - root: cluster1
+
+# for pillars
+ext_pillar:
+  - git:
+    - main https://github.com/patrickmamaid/salt-gitfs-tutorial.git:
+      - root: pillars
+
+# lower sec to auto approve minion nginx slave rmq join
+auto_accept: True
+
+
+    """ >> /etc/salt/master
+
+    sudo service salt-master restart
+
+  SHELL
+end
+
+
