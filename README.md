@@ -25,7 +25,7 @@ In my case I have run this on my mac
 
 
 
-# How to use this tutorial
+# How to use this tutorial (START HERE)
 1. Copy and rename the vagrant/*-Vagrantfile to your localmachine each in separate directories from this repo
 2. Launch the master `vagrant up` first and let it finish
 3. Launch the slave `vagrant up` and let it finish
