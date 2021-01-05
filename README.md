@@ -1,5 +1,6 @@
 # Why did I create this tutorial ? 
-From the: https://docs.saltstack.com/en/latest/topics/tutorials/gitfs.html in the gitfs section called "SIMPLE CONFIGURATION" it tells you that you only require to change 2 things but this can be hard if you are starting from scratch.
+From the: https://docs.saltstack.com/en/latest/topics/tutorials/gitfs.html in the gitfs backend walkthrough there is a section called "SIMPLE CONFIGURATION". 
+It states that you only require to change 2 things but this can be hard if you are starting from scratch.
 
 
 Examples of issues with this:
