@@ -40,8 +40,8 @@ In my case I have run this on my mac
 ![alt text](https://github.com/patrickmamaid/salt-gitfs-tutorial/blob/main/Screen%20Shot%202021-01-05%20at%201.53.41%20AM.png)
 
 ## Some useful commands while you are debugging and reconfiguring it for yourself:
-1. (aggressive) Flush master cache and hard restart master and apply to slave `rm -rf /var/cache/salt/master/gitfs/* ; service salt-master restart ;  sleep 1; salt-run fileserver.update ; sleep 10;  salt '*' state.highstate -l debug;`
-2. After you update your forked repo you can trigger a git pull and state run via `salt-run fileserver.update && salt '*' state.highstate`
+1. Run this from the master: (aggressive) Flush master cache and hard restart master and apply to slave `rm -rf /var/cache/salt/master/gitfs/* ; service salt-master restart ;  sleep 1; salt-run fileserver.update ; sleep 10;  salt '*' state.highstate -l debug;`
+2. Run this from the master: After you update your forked repo you can trigger a git pull and state run via `salt-run fileserver.update && salt '*' state.highstate` (if you do not want to wait for the update interval time)
 
 ## NOTE
 - My repo defaults to "main" branch, if yours is master, you will need to adjust the master, minion, pillartop and salttop configs, I have included some comments in those files, do not also forget to adjust the `gitfs_whitelists:` in the master config as well
