@@ -26,9 +26,10 @@ In my case I have run this on my mac
 
 
 # How to use this tutorial (START HERE)
-1. Copy and rename the vagrant/*-Vagrantfile to your localmachine each in separate directories from this repo
-2. Launch the master `vagrant up` first and let it finish
-3. Launch the slave `vagrant up` and let it finish
+1. From this repo, copy the `vagrant/*-Vagrantfile`s to your localmachine each in separate directories 
+2. Rename each `*Vagrantfile` to just `Vagrantfile`
+2. Launch the master first `vagrant up` and let it finish
+3. Launch the slave second `vagrant up` and let it finish
 4. Check if it worked, navigate to http://192.168.33.70
 5. If you like what happened, feel free to fork the repo and reconfigure it to whatever you desire
 
