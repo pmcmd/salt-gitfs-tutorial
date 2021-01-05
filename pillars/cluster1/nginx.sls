@@ -1,4 +1,3 @@
-#!jinja|yaml
 
 
 nginx_overwrite: |
