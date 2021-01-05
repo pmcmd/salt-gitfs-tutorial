@@ -10,8 +10,10 @@ Example of people getting confused:
 
 I've had enough of this.
 
+
 Clearly saltstack docs need an update or they should add more to a statement like "SIMPLE CONFIGURATION".
 Furthermore this type of configuration is not so simple if you start from scratch. So behold, a working sample of "SIMPLE CONFIGURATION".
+
 
 ## What do I need
 1. An updated copy of hashicorp vagrant
@@ -20,6 +22,7 @@ Furthermore this type of configuration is not so simple if you start from scratc
 4. Some saltstack experience
 
 In my case I have run this on my mac
+
 
 ## What you will expect
 1. You will expect 2 vagrant instances running with the ip addresses: master/192.168.33.69 minion/192.168.33.70
