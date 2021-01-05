@@ -1,7 +1,6 @@
-
+#!jinja|yaml|gpg
 
 
 base: 
-
-  'main':
+  '*':
     - nginx.init
