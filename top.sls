@@ -1,4 +1,4 @@
 
-base: 
+main: 
   '*':
     - nginx.init
