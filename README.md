@@ -2,11 +2,12 @@
 Well if you look at: https://docs.saltstack.com/en/latest/topics/tutorials/gitfs.html "SIMPLE CONFIGURATION" is quite convoluted and it tells you you only need to change 2 things. Well this is simply not the case.
 
 Example of people getting confused:
-https://github.com/saltstack-formulas/salt-formula/issues/18
-https://github.com/saltstack/salt/issues/9608
-https://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html#adding-a-formula-as-a-gitfs-remote
-https://serverfault.com/questions/817345/salt-top-sls-does-not-update-on-salt-run-fileserver-update-with-gitfs
-https://freenode.logbot.info/salt/20201231
+- https://github.com/saltstack-formulas/salt-formula/issues/18
+- https://github.com/saltstack/salt/issues/9608
+- https://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html#adding-a-formula-as-a-gitfs-remote
+- https://serverfault.com/questions/817345/salt-top-sls-does-not-update-on-salt-run-fileserver-update-with-gitfs
+- https://freenode.logbot.info/salt/20201231
+I've had enough of this.
 
 Clearly saltstack docs need an update or they should add more to a statement like "SIMPLE CONFIGURATION".
 Furthermore this type of configuration is not so simple if you start from scratch. So behold, a working sample of "SIMPLE CONFIGURATION".
