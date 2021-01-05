@@ -1,4 +1,0 @@
-
-main: 
-  '*':
-    - salt.nginx.init
