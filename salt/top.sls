@@ -3,5 +3,5 @@
 
 base: 
 
-  '*':
+  'main':
     - nginx.init
