@@ -1,5 +1,6 @@
 # Why did I create this tutorial ? 
-I wanted to see how quickly I could step through their gitfs saltstack tutorial working from scratch
+I wanted to see how quickly I could step through their gitfs saltstack tutorial working from scratch.
+
 From the: https://docs.saltstack.com/en/latest/topics/tutorials/gitfs.html in the gitfs backend walkthrough there is a section called "SIMPLE CONFIGURATION". 
 It states that you only require to change 2 things but this may be hard if you are starting out from scratch (might be challenging noobies).
 
