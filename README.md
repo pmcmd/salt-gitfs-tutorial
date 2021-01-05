@@ -3,7 +3,7 @@ From the: https://docs.saltstack.com/en/latest/topics/tutorials/gitfs.html in th
 It states that you only require to change 2 things but this may be hard if you are starting out from scratch.
 
 
-Examples of issues with this:
+Examples of issues around that documentation:
 - https://github.com/saltstack-formulas/salt-formula/issues/18
 - https://github.com/saltstack/salt/issues/9608
 - https://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html#adding-a-formula-as-a-gitfs-remote
