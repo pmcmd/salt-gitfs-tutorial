@@ -38,7 +38,6 @@ In my case I have run this on my mac
 2. After you update your forked repo you can trigger a git pull and state run via `salt-run fileserver.update && salt '*' state.highstate`
 
 ## NOTE
-- My repo defaults to "main" branch, if yours is master, you will need to adjust the master, minion, pillartop and salttop configs, I have included some comments in those files
-
+- My repo defaults to "main" branch, if yours is master, you will need to adjust the master, minion, pillartop and salttop configs, I have included some comments in those files, do not also forget to adjust the `gitfs_whitelists:` in the master config as well
 
 
