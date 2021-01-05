@@ -5,3 +5,4 @@ main:
 
   'nginx-slave\d+':
     - nginx.init
+    - match: pcre
