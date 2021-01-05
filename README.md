@@ -1,18 +1,17 @@
 # Why did I create this tutorial ? 
-Well if you look at: https://docs.saltstack.com/en/latest/topics/tutorials/gitfs.html "SIMPLE CONFIGURATION".. this section is quite convoluted and it tells you you only need to change 2 things. Well this is simply not the case.
+From the: https://docs.saltstack.com/en/latest/topics/tutorials/gitfs.html in the gitfs section called "SIMPLE CONFIGURATION" it tells you that you only require to change 2 things but this can be hard if you are starting from scratch.
 
-Example of people getting confused:
+
+Examples of issues with this:
 - https://github.com/saltstack-formulas/salt-formula/issues/18
 - https://github.com/saltstack/salt/issues/9608
 - https://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html#adding-a-formula-as-a-gitfs-remote
 - https://serverfault.com/questions/817345/salt-top-sls-does-not-update-on-salt-run-fileserver-update-with-gitfs
 
 
-This is not good. 
 
-
-Clearly saltstack docs need an update or they should add more to a statement like "SIMPLE CONFIGURATION".
-Furthermore this type of configuration is not so simple if you start from scratch. So behold, a working sample of "SIMPLE CONFIGURATION".
+This tutorial is aimed at complimenting the saltstack documentation around the gitfs section "SIMPLE CONFIGURATION".
+So behold, this here is a working exmaple of gitfs backend with ext pillars in vagrant.
 
 
 ## What do I need
