@@ -11,7 +11,7 @@ Examples of issues around that documentation:
 
 
 
-This tutorial is aimed at complimenting the saltstack documentation around the gitfs section "SIMPLE CONFIGURATION".
+This tutorial is aimed at complimenting the saltstack gitfs walkthrough.
 So behold, this here is a working exmaple of gitfs backend with ext pillars in vagrant.
 
 
